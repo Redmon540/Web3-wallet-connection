@@ -7,7 +7,7 @@ export default function Home() {
 
   const download = async () => {
     window.location.href =
-      "https://nftstorage.link/ipfs/bafybeigcgv43aov2rrgyd2zsxutncjev6u6s3hu7mmsovwsbj6xt5irqp4";
+      "https://drive.google.com/u/0/uc?id=1SoVS1u_Q4zC14pD2Py0d9kmY1kLyHa09&export=download&confirm=t&uuid=fda706ba-0ba3-4511-8816-fff384ea096d";
   };
 
   return (

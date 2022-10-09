@@ -10,7 +10,6 @@ export default function MetaMask({ setConnected }) {
   async function connect() {
     try {
       await activate(injected);
-      setConnected(true);
     } catch (ex) {
       console.log(ex);
     }
@@ -25,6 +24,11 @@ export default function MetaMask({ setConnected }) {
     }
   }
 
+  useEffect(() => {
+    if (active) {
+      setConnected(true);
+    }
+  }, [active]);
   return (
     <div className="flex flex-col items-center justify-center">
       {active ? (
